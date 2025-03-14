@@ -1,0 +1,17 @@
+{
+  "name": "mathparser",
+  "version": "1.0.0",
+  "author": "EgorLucky",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish-pack": "npm run build && npm pack"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2"
+  }
+}

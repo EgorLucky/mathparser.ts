@@ -1,0 +1,19 @@
+{
+  "name": "tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx ts-node index",
+    "linklib": "npm run --prefix ../math-parser build && npm link ../math-parser",
+    "install-lib": "npm install mathparser"
+  },
+  "dependencies": {
+    "mathparser": "file:../math-parser/mathparser-1.0.0.tgz"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2"
+  }
+}
