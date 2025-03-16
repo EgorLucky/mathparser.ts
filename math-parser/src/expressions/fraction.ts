@@ -6,7 +6,7 @@ export class Fraction implements Expression {
   variables: Variable[];
   name = this.constructor.name;
   numerator: Expression;
-  denomitator: Expression;
+  denumerator: Expression;
 
   constructor(
     variables: Variable[],
@@ -15,13 +15,13 @@ export class Fraction implements Expression {
   ) {
     this.variables = variables;
     this.numerator = numerator;
-    this.denomitator = denumerator;
+    this.denumerator = denumerator;
   }
 
   computeValue(parameters: Parameter[]): number {
     const result =
       this.numerator.computeValue(parameters) /
-      this.denomitator.computeValue(parameters);
+      this.denumerator.computeValue(parameters);
     return result;
   }
 }
