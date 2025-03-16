@@ -12,6 +12,6 @@
     "publish-pack": "npm run build && npm pack"
   },
   "devDependencies": {
-    "typescript": "5.2.2"
+    "typescript": "5.8.2"
   }
 }
