@@ -1,3 +1,6 @@
 .idea
 .DS_Store
 *.tgz
+.idea
+node_modules
+*/dist
